@@ -39,7 +39,7 @@ export function Sidebar({ role }: { role: UserRole }) {
   return (
     <aside className="hidden min-h-screen w-64 border-r border-line bg-white px-4 py-6 lg:block">
       <div className="mb-8">
-        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-700">HRMS Portal</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-700">EKAGRAH</p>
         <h1 className="mt-2 text-xl font-semibold text-ink">People Operations</h1>
       </div>
       <nav className="space-y-1">
