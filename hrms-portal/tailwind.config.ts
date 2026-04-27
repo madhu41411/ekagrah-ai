@@ -21,6 +21,15 @@ const config: Config = {
       },
       boxShadow: {
         panel: "0 8px 30px rgba(15, 23, 42, 0.08)"
+      },
+      animation: {
+        "fade-in": "fade-in 0.18s ease-out"
+      },
+      keyframes: {
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(-6px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" }
+        }
       }
     }
   },

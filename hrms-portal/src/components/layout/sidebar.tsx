@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Route } from "next";
-import { BriefcaseBusiness, CalendarRange, FileText, LayoutDashboard, Megaphone, Users } from "lucide-react";
+import { BriefcaseBusiness, CalendarRange, FileText, LayoutDashboard, Megaphone, Settings, Users } from "lucide-react";
 import type { UserRole } from "@prisma/client";
 import { cn } from "@/lib/utils";
 
@@ -11,7 +11,8 @@ const navByRole: Record<UserRole, Array<{ href: Route; label: string; icon: type
     { href: "/onboarding", label: "Onboarding", icon: FileText },
     { href: "/attendance", label: "Attendance", icon: BriefcaseBusiness },
     { href: "/leave", label: "Leave", icon: CalendarRange },
-    { href: "/announcements", label: "Announcements", icon: Megaphone }
+    { href: "/announcements", label: "Announcements", icon: Megaphone },
+    { href: "/configuration", label: "Configuration", icon: Settings }
   ],
   HR_ADMIN: [
     { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
@@ -19,7 +20,8 @@ const navByRole: Record<UserRole, Array<{ href: Route; label: string; icon: type
     { href: "/onboarding", label: "Onboarding", icon: FileText },
     { href: "/attendance", label: "Attendance", icon: BriefcaseBusiness },
     { href: "/leave", label: "Leave", icon: CalendarRange },
-    { href: "/announcements", label: "Announcements", icon: Megaphone }
+    { href: "/announcements", label: "Announcements", icon: Megaphone },
+    { href: "/configuration", label: "Configuration", icon: Settings }
   ],
   MANAGER: [
     { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
