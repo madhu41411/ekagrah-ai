@@ -6,13 +6,8 @@
   color-scheme: light;
 }
 
-/* HRMS dashboard body styles — only applied inside the dashboard layout */
-.hrms-body {
-  background:
-    radial-gradient(circle at top left, rgba(16, 185, 129, 0.09), transparent 28%),
-    linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
-  color: #0f172a;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+body {
+  margin: 0;
 }
 
 a {
