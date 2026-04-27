@@ -1,0 +1,19 @@
+{
+  "name": "ekagrah-ai",
+  "version": "1.0.0",
+  "description": "Ekagrah-AI — Marketing website + HRMS Employee Portal",
+  "private": true,
+  "workspaces": [
+    "hrms-portal"
+  ],
+  "scripts": {
+    "dev": "npm run dev:site & npm run dev:hrms",
+    "dev:site": "npx serve public -p 8080",
+    "dev:hrms": "cd hrms-portal && npm run dev",
+    "build": "npm run build:hrms",
+    "build:hrms": "cd hrms-portal && npm run build"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

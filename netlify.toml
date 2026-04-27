@@ -1,0 +1,29 @@
+# Netlify configuration for Ekagrah-AI marketing site
+
+[build]
+  publish = "public"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Redirect /portal → HRMS app (update URL when HRMS is deployed)
+# [[redirects]]
+#   from = "/portal"
+#   to = "https://hrms.ekagrah-ai.com/dashboard"
+#   status = 302
+#   force = true
